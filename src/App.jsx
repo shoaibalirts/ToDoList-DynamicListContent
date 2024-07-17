@@ -1,7 +1,15 @@
 import { useState } from "react";
+import Todo from "./Todo";
 export const DUMMY_TODOS = ["Learn React", "Practice React", "Profit!"];
+
 function App() {
-  return;
+  return (
+    <ul>
+      {DUMMY_TODOS.map((item) => (
+        <Todo item={item} />
+      ))}
+    </ul>
+  );
 }
 
 export default App;
