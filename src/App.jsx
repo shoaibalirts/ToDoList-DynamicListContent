@@ -5,8 +5,8 @@ export const DUMMY_TODOS = ["Learn React", "Practice React", "Profit!"];
 function App() {
   return (
     <ul>
-      {DUMMY_TODOS.map((item) => (
-        <Todo item={item} />
+      {DUMMY_TODOS.map((item, index) => (
+        <Todo key={index} item={item} />
       ))}
     </ul>
   );
